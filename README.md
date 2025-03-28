@@ -1,6 +1,8 @@
 # aplicacionmvc_aspnetcore
 ![image](https://github.com/user-attachments/assets/26c3b47f-15c7-410b-a204-124a667d030e)
 
+![image](https://github.com/user-attachments/assets/ec471f72-c08e-4253-b0ad-a3de7cba053b)
+
 ![image](https://github.com/user-attachments/assets/60c733bb-6a21-41c0-89de-6f24d6ff6b19)
 
 ![image](https://github.com/user-attachments/assets/7be611a2-295d-426a-8ee1-84598a611f6c)
