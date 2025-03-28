@@ -23,7 +23,7 @@ namespace Aplicacionmvcmysql.Controllers
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                MySqlCommand command = new MySqlCommand("SELECT nombre, tipo FROM datos", connection);
+                MySqlCommand command = new MySqlCommand("CALL ObtenerProductosYTipos();", connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                 adapter.Fill(dataTable);
             }
