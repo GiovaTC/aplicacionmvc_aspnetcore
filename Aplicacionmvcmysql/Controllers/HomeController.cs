@@ -1,5 +1,6 @@
 ﻿using Aplicacionmvcmysql.Models;
 using Microsoft.AspNetCore.Mvc;
+using MySql.Data.MySqlClient;
 using System.Data;
 using System.Diagnostics;
 
@@ -10,24 +11,23 @@ namespace Aplicacionmvcmysql.Controllers
         private readonly ILogger<HomeController> _logger;
 
         //connection string
-      //  private readonly string connectionString = "server=localhost;database=mi_base;user=mi_usuario;password=mi_contraseña;";
+        private readonly string connectionString = "server=localhost;database=dataejemplo;user=giovanny;password=tapiero;";
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
-         /*   DataTable dataTable = new DataTable();
+            DataTable dataTable = new DataTable();
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM productos", connection);
+                MySqlCommand command = new MySqlCommand("SELECT nombre, tipo FROM datos", connection);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                 adapter.Fill(dataTable);
-            }*/
-            return View();
+            }
+            return View(dataTable);
         }
 
         public IActionResult Privacy()
